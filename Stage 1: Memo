@@ -1,0 +1,58 @@
+**Risk Management Memo \- Scenario 4**  
+Created by: [Alessia Loperfido](mailto:alessial@hawaii.edu)  
+Updated by: [Alessia Loperfido](mailto:alessial@hawaii.edu)  
+Date Created: 04/01/2026  
+Date Updated: 04/01/2026  
+Version: 0.1  
+LLM Used: OpenAI
+
+**Executive Summary (≤150 words)**  
+The Aerospace Manufacturing firm faces foreign exchange risk on a €20,000,000 receivable due in one year. With the current EUR/USD spot rate at \~1.1605 and a forward rate of 1.0935, a depreciation of the euro could materially reduce USD proceeds. This memo evaluates three hedging strategies: forward contract, money market hedge, and options hedge. Each approach balances trade-offs between certainty, flexibility, and cost. A preliminary assessment suggests that the forward hedge yields the most predictable outcome, while options preserve upside at a premium. The next steps include building an Excel-based valuation model, stress testing exchange rate scenarios, and selecting an optimal hedge based on risk tolerance and expected value. The final recommendation will be presented to the CFO with quantitative support.
+
+**Background & Objectives**  
+As stated in the scenario, the firm expects to receive €20,000,000 in one year, creating transaction exposure to fluctuations in the EUR/USD exchange rate. This exposure is risky because if the euro depreciates relative to the U.S. dollar, the firm’s USD proceeds will decline. At a current spot rate of approximately 1.1605, the receivable is worth about $23.21 million today; however, using the forward rate of 1.0935, the value falls to roughly $21.87 million, highlighting meaningful downside risk. The firm’s primary objective is to protect the USD value of this receivable while evaluating available hedging strategies and selecting an approach that optimizes the tradeoff between risk reduction and potential upside.
+
+**Methods**
+
+1. Forward Contract  
+   * Lock in 1.0935, with guaranteed USD proceeds of $21.87M  
+* Pros:  
+  * Eliminates FX uncertainty  
+  * Simple, no upfront cost  
+* Cons:  
+  * No upside if EUR appreciates
+
+2. Money Market Hedge  
+   * Borrow EUR, convert to USD, then invest USD  
+* Pros:  
+  * Synthetic forward pricing  
+  * Locks in value using interest parity  
+* Cons:  
+  * Requires balance sheet usage  
+  * More operationally complex
+
+3. Options Hedge, with a protective Put on EUR  
+   * Put (K \= 1.16), premium \= $0.019  
+* Pros:   
+  * Downside protection  
+  * Retains upside of EUR strengthens  
+* Cons:  
+  * Premium cost (\~$380,000 total)  
+  * Lower net proceeds if the EUR is stable
+
+**Limitations & Next Steps**  
+Limitations:
+
+* Interest rates approximated from macro benchmarks  
+* No volatility surface for option pricing   
+* Static (non-stochastic) model
+
+Next Steps:
+
+* Stage 2 – Excel Model: Create an Excel model that will evaluate hedging outcomes across a range of EUR/USD scenarios. This model will calculate USD proceeds for the three scenarios listed above. Outputs will include a payoff table, a sensitivity analysis, and the identification of break-even exchange rates to support a direct comparison of strategies.  
+* Stage 3 – Technical Specification: Create a document that will include all inputs, such as exchange rates, interest rates, and premiums, and a calculator engine for each hedge.  
+* Stage 4 –  Final Analysis & Recommendation: Use model outputs and sensitivity analysis to recommend the best hedging strategy.
+
+**References**
+
+EUR/USD (EURUSD=x) stock historical prices & data \- Yahoo Finance. Yahoo Finance. (n.d.). https://finance.yahoo.com/quote/EURUSD=X/history/   
