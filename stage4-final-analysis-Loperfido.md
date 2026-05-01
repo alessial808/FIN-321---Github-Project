@@ -104,9 +104,7 @@ Although options provide flexibility, they function as “insurance” and may a
 
 Overall, the forward hedge aligns with the firm’s likely priority, which prioritizes stability over speculation.
 
-## **F. Structured AI Prompt (Reproducible Model)**
-
-## **F. Structured AI Prompt (Markdown Format)**
+## **F. Structured AI Prompt**
 
 \# GOAL  
 Create a professional Excel workbook that models and compares FX hedging strategies for a EUR-denominated receivable. The model must evaluate forward, money market, and option hedges, and produce clear outputs for decision-making.
