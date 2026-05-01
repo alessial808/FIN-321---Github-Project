@@ -251,7 +251,7 @@ Step 3: Compute USD proceeds
   \- "Notes & Assumptions" tab  
 \- Ensure model is readable, auditable, and presentation-ready
 
-**G. Areas for Further Study & Improvement (Extra Credit)**
+## **G. Areas for Further Study & Improvement (Extra Credit)**
 
 **1\. AI Skills & Automation**
 
